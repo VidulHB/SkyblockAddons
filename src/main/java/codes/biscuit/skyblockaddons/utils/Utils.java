@@ -222,7 +222,7 @@ public class Utils {
     public boolean isOnHypixel() {
         EntityPlayerSP player = Minecraft.getMinecraft().thePlayer;
         if (player == null) {
-            return false;
+            return true;
         }
         String brand = player.getClientBrand();
         if (brand != null) {
@@ -232,7 +232,7 @@ public class Utils {
                 }
             }
         }
-        return false;
+        return true;
     }
 
     public void parseSidebar() {
